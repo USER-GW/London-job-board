@@ -39,6 +39,9 @@ const authController = require("./controllers/auth.js");
 
 app.use("/auth", authController);
 
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
 // Routes
 app.get("/", async (req, res) => {
   res.render("index.ejs");
