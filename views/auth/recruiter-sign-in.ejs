@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/recruiter-sign-in.css" />
+    <title>Recruiter Sign In</title>
+  </head>
+  <body>
+    <header>
+        <nav class="nav-bar-one">
+            <ul class="jcb-nav-links">
+               
+                <li class="jcb-link"> <a> Jobs</a></li>
+         
+                <li class="jcb-link"> <a> Companies</a></li>
+         
+                <li class="jcb-link"> <a> Blog</a></li>
+            </ul>
+        </nav>
+    
+
+    </header>
+    <a href="/" class="home-nav">Home</a>
+    <div class ="sign-in-div">
+    <h1 class ="sign-in-header">Recruiter Sign In </h1>
+    <form class="sign-in-form" action="/auth/recruiter-sign-in" method="POST">
+      <label for="email">Email:</label>
+      <input type="text" name="email" id="email" />
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" />
+      <button class= "sign-in-button" type="submit">Sign In</button>
+    </form>
+    <button onclick="window.location.href='/auth/recruiter-sign-up';" class="sign-up-button">Sign Up</button>
+</div>
+  </body>
+</html>

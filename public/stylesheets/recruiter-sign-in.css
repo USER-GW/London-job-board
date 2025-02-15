@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    --button-green: #7df5ab;
+    font-family: "Inter", serif;
+    --text-green: #58ca84;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    padding: 1em;
+  }
+  /* JCB NAV LINK */
+  .nav-bar-one {
+    width: 90%;
+  
+  }
+  .jcb-nav-links {
+    width: 100%;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap:100px;
+    color: black;
+  }
+  .sign-in-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    padding: 1em;
+  }
+
+  .sign-in-div {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 80vh;
+ 
+  }
+
+  .sign-in-div label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.sign-in-form {
+  width: 50%;
+  height: fit-content;
+}
+
+.sign-in-form input[type="text"],
+.sign-in-form input[type="email"],
+.sign-in-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+}
+
+.sign-in-button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sign-up-button{
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  color: #000000;
+  border: 2px solid black ;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 1em;
+  width: 50%;
+}
+
+.home-nav {
+  padding: 2em;
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+  color: rgb(52, 52, 52);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.home-nav:hover {
+  font-weight: 600;
+  background-color: var(--text-green);
+  color: white;
+}

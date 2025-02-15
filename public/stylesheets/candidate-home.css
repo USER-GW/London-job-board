@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    --button-green: #7df5ab;
+    font-family: "Inter", serif;
+    --text-green: #58ca84;
+    --hover-color: #4afc8f;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    padding: 1em;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  /* JCB NAV LINK */
+  .nav-bar-one {
+    width: 90%;
+  
+  }
+  .jcb-nav-links {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap:100px;
+    color: black;
+    overflow: hidden;
+  }
+  
+  .search-container {
+    width: 100%;
+    height: 12vh;;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;  
+    background: linear-gradient(90deg, rgba(123, 254, 241, 0.3) 20%, rgba(110, 252, 165, 0.3) 50%, rgba(207, 244, 255, 0.7) 90%);
+  }
+
+  .search-form {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly   ; 
+    margin-top: 10px;
+  }
+  
+  .search-input {
+    width: 50%;
+    height: 100%;
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 20px;
+  }
+
+  .search-button {
+    width: 10%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 20px;
+    background-color: var(--button-green);
+    color: white;
+  }
+
+  
+  .jobs-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+   .job-card {
+    display: flex;       
+    gap: 5px;                        
+    flex-direction: column;
+    width: 40%;
+    height: 80%;
+    border: 1px solid #000000;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+   }
+
+   .job-description {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    color:#929292;
+    margin-top:40px;
+
+   }
+
+   .apply-button {
+    width: 100%;
+    height: 10%;
+    border: 1px solid black;
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 20px;
+    background-color: var(--button-green);
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    cursor: pointer;
+   }
+
+   .apply-button:hover {
+    background-color: var(--hover-color)
+   }
+   
+@media screen and (max-width: 768px) {
+    .jobs-container {
+      flex-direction: column;
+    }
+    .job-card {
+      width: 80%;
+    }
+  
+}
+
+.drop-down button {
+  background-color: var(--button-green);
+  border-radius: 10px;
+border: none;
+cursor: pointer;
+font-weight: 600;
+gap:100px;
+color: black;
+overflow: hidden;
+}
+
+.drop-down a{
+  display:block;
+  color: black;
+  text-decoration: none;
+}
+
+a {
+  padding: 10px;
+}
+.drop-down .drop-down-content{
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 120px;
+
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.drop-down:hover .drop-down-content{
+  display: block;
+}
+
+.drop-down-content a:hover{
+  background-color: var(--button-green)
+}

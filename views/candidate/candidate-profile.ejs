@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/candidate-profile.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <header>
+        <nav class="nav-bar-one">
+            <ul class="jcb-nav-links">
+                <li class="jcb-link"> <a> Jobs</a></li>
+                <li class="jcb-link"> <a> Companies</a></li>
+                <li class="jcb-link"> <a> Blog</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+    <a href="/candidate/home/<%= candidate._id %>" class="home-nav">Back</a>
+    <div class ="sign-up-div">
+    <h1 class ="sign-up-header">Manage Profile</h1>
+    <form class="sign-up-form" action="/candidate/profile/<%=candidate._id%>?_method=PUT" method="POST">
+      <label for="firstname">Change First Name:</label>
+      <input type="text" name="firstname" id="firstname" placeholder="Update your first name"/>
+      <label for="lastname">Change Last Name:</label>
+      <input type="text" name="lastname" id="lastname" placeholder="Update your last name" />
+      <label for="email">Change Email:</label>
+      <input type="text" name="email" id="email" placeholder="Update your Email" />
+      <button class= "update-button" type="submit">Update</button>
+    </form>
+    <p>Or</p>
+    <form action="/candidate/profile/<%=candidate._id%>?_method=DELETE" 
+      method="POST" class="delete-form" >
+    <button class="delete-button" type="submit" 
+            onclick="return confirm('Are you sure you want to delete <%=candidate.firstname %>?');">
+            Delete Profile for <%= candidate.firstname.charAt(0).toUpperCase() + candidate.firstname.slice(1) %>
+    </button>
+</form>
+  
+</div>
+  </body>
+</html>

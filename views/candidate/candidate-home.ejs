@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/candidate-home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Parkinsans:wght@300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sixtyfour+Convergence&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Candidate Home Page </title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar-one">
+            <ul class="jcb-nav-links">
+                <li class="jcb-link"> <a> Jobs</a></li>
+                <li class="jcb-link"> <a> Companies</a></li>
+                <li class="jcb-link"> <a> Blog</a></li>
+                <div class="drop-down">
+                <button class="jcb-link"> <a> <%= candidate.firstname.charAt(0).toUpperCase() + candidate.firstname.slice(1) %> 👋</a></button> 
+                <div class="drop-down-content">
+                    <a href="/candidate/profile/<%= candidate._id %>">Profile</a>
+
+                    <a href="/candidate-Settings">Settings</a>
+                    <a href="/">Logout</a>
+            </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="search-container">
+        <form class="search-form" action="/candidate-landing" method="POST">
+            <label for="search"></label>
+            <input type="text" name="search" id="search"  class="search-input" placeholder="Job Title, Industry etc."/>
+    
+           <p>Min Salary <select>Min Salary</select></p>
+           <p>Max Salary <select>Max Salary</select></p>
+           <p> </p>
+           <p> </p>
+          <p>Filters <select>Filters</select></p>
+        </form>
+    </div>
+    <secion class="jobs-section">
+    <div class="jobs-container">
+        <div class="job-card">
+            <h2>Job Title</h2>
+            <p>Company Name</p>
+            <p>Location</p>
+            <p>Salary</p>
+            <p class="job-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati autem maxime ratione optio quasi sit molestias excepturi minima corporis hic corrupti expedita nulla velit error veniam, illum mollitia voluptates quam? </p>
+            <button class="apply-button">Apply</button>
+        </div>
+        <div class="job-card">
+            <h2>Job Title</h2>
+            <p>Company Name</p>
+            <p>Location</p>
+            <p>Salary</p>
+            <p class="job-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati autem maxime ratione optio quasi sit molestias excepturi minima corporis hic corrupti expedita nulla velit error veniam, illum mollitia voluptates quam? </p>
+            <button class="apply-button">Apply</button>
+        </div>
+        <div class="job-card">
+            <h2>Job Title</h2>
+            <p>Company Name</p>
+            <p>Location</p>
+            <p>Salary</p>
+            <p class="job-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati autem maxime ratione optio quasi sit molestias excepturi minima corporis hic corrupti expedita nulla velit error veniam, illum mollitia voluptates quam? </p>
+            <button class="apply-button">Apply</button>
+        </div>
+        <div class="job-card">
+            <h2>Job Title</h2>
+            <p>Company Name</p>
+            <p>Location</p>
+            <p>Salary</p>
+            <p class="job-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati autem maxime ratione optio quasi sit molestias excepturi minima corporis hic corrupti expedita nulla velit error veniam, illum mollitia voluptates quam? </p>
+            <button class="apply-button">Apply</button>
+        </div>
+        <div class="job-card">
+            <h2>Job Title</h2>
+            <p>Company Name</p>
+            <p>Location</p>
+            <p>Salary</p>
+            <p class="job-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati autem maxime ratione optio quasi sit molestias excepturi minima corporis hic corrupti expedita nulla velit error veniam, illum mollitia voluptates quam? </p>
+            <button class="apply-button">Apply</button>
+        </div>
+        <div class="job-card">
+            <h2>Job Title</h2>
+            <p>Company Name</p>
+            <p>Location</p>
+            <p>Salary</p>
+            <p class="job-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati autem maxime ratione optio quasi sit molestias excepturi minima corporis hic corrupti expedita nulla velit error veniam, illum mollitia voluptates quam? </p>
+            <button class="apply-button">Apply</button>
+        </div>
+        <div class="job-card">
+            <h2>Job Title</h2>
+            <p>Company Name</p>
+            <p>Location</p>
+            <p>Salary</p>
+            <p class="job-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati autem maxime ratione optio quasi sit molestias excepturi minima corporis hic corrupti expedita nulla velit error veniam, illum mollitia voluptates quam? </p>
+            <button class="apply-button">Apply</button>
+        </div>
+        <div class="job-card">
+            <h2>Job Title</h2>
+            <p>Company Name</p>
+            <p>Location</p>
+            <p>Salary</p>
+            <p class="job-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati autem maxime ratione optio quasi sit molestias excepturi minima corporis hic corrupti expedita nulla velit error veniam, illum mollitia voluptates quam? </p>
+            <button class="apply-button">Apply</button>
+        </div>
+       
+    </div>
+</secion>
+</body>
+</html>
