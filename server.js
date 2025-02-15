@@ -48,19 +48,19 @@ app.get("/", async (req, res) => {
 });
 
 app.get("/auth/candidate-sign-up", async (req, res) => {
-  res.render("auth/candidate-sign-up.ejs"); // Fixed route
+  res.render("auth/candidate-sign-up.ejs"); 
 });
 
 app.get("/auth/candidate-sign-in", async (req, res) => {
-    res.render("auth/candidate-sign-in.ejs"); // Fixed route
+    res.render("auth/candidate-sign-in.ejs"); 
   });
 
   app.get("/auth/recruiter-sign-up", async (req, res) => {
-    res.render("auth/recruiter-sign-up.ejs"); // Fixed route
+    res.render("auth/recruiter-sign-up.ejs"); 
   });
 
   app.get("/auth/recruiter-sign-in", async (req, res) => {
-    res.render("auth/recruiter-sign-in.ejs"); // Fixed route
+    res.render("auth/recruiter-sign-in.ejs"); 
   });
 
   app.get("/candidate/profile/:candidateId", async (req, res) => {
@@ -71,7 +71,7 @@ app.get("/auth/candidate-sign-in", async (req, res) => {
             return res.status(404).send("Candidate not found");
         }
 
-        res.render("candidate/candidate-profile.ejs", { // Make sure this is the correct template
+        res.render("candidate/candidate-profile.ejs", { 
             candidate: candidate,
             sessionCandidate: req.session.candidate
         });

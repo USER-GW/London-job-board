@@ -31,7 +31,7 @@ router.post("/candidate-sign-up", async (req, res) => {
       password: hashedPassword 
     });
 
-    // Store candidate in session (optional)
+    // Store candidate in session
     req.session.candidate = candidate; 
 
     // Redirect to the home page with candidateId
